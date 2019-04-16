@@ -21,14 +21,14 @@ UINavigationControllerDelegate {
     
     let textFieldDeleget = TextFieldDelegate()
     
-    
-    struct Meme {
-        var topText: String
-        var bottomText: String
-        var originalImage: UIImage
-        var memedImage: UIImage
-        
-    }
+//
+//    struct Meme {
+//        var topText: String
+//        var bottomText: String
+//        var originalImage: UIImage
+//        var memedImage: UIImage
+//
+//    }
     
     
     let textAttributes:[NSAttributedString.Key: Any] = [
@@ -150,6 +150,10 @@ UINavigationControllerDelegate {
     func save(image: UIImage) -> UIImage{
         // Create the meme
         let meme = Meme(topText: topTextField.text!, bottomText: buttomTextField.text!, originalImage: imagePickerView.image!, memedImage: image)
+        
+        let appDelegate = UIApplication.shared.delegate as! AppDelegate
+        appDelegate.memes.append(meme)
+        
         return meme.memedImage
     }
     
