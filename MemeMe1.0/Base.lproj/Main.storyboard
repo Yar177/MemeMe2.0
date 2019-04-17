@@ -19,22 +19,22 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" translatesAutoresizingMaskIntoConstraints="NO" id="Joj-US-8vr">
-                                <rect key="frame" x="0.0" y="48" width="375" height="591"/>
+                                <rect key="frame" x="0.0" y="92" width="375" height="498"/>
                             </imageView>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" text="Top" textAlignment="center" clearsOnBeginEditing="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="aFe-QP-evF">
-                                <rect key="frame" x="16" y="114" width="343" height="23"/>
+                                <rect key="frame" x="16" y="158" width="343" height="23"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="19"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="allCharacters"/>
                             </textField>
                             <textField opaque="NO" tag="131" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" text="Buttom" textAlignment="center" clearsOnBeginEditing="YES" adjustsFontForContentSizeCategory="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="tYB-F1-zAc" userLabel="Bottom Text Field">
-                                <rect key="frame" x="16" y="550" width="343" height="23"/>
+                                <rect key="frame" x="16" y="501" width="343" height="23"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="19"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="allCharacters"/>
                             </textField>
                             <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="center" translatesAutoresizingMaskIntoConstraints="NO" id="HtP-D0-vmn" userLabel="BottomToolbar">
-                                <rect key="frame" x="0.0" y="623" width="375" height="44"/>
+                                <rect key="frame" x="0.0" y="574" width="375" height="44"/>
                                 <items>
                                     <barButtonItem style="plain" systemItem="flexibleSpace" id="7dH-Gm-q2n"/>
                                     <barButtonItem style="plain" systemItem="camera" id="GVc-Ta-HIc">
@@ -52,7 +52,7 @@
                                 </items>
                             </toolbar>
                             <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YSO-5o-mES" userLabel="TopToolbar">
-                                <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                                <rect key="frame" x="0.0" y="64" width="375" height="44"/>
                                 <items>
                                     <barButtonItem style="plain" systemItem="action" id="6Os-v4-zra" userLabel="Share">
                                         <inset key="imageInsets" minX="0.0" minY="-2" maxX="0.0" maxY="0.0"/>
@@ -167,7 +167,11 @@
                     </tableView>
                     <navigationItem key="navigationItem" title="Sent Memes" id="6Nj-Jr-IP7">
                         <barButtonItem key="backBarButtonItem" title="Sent Memes" id="TEl-2t-hec"/>
-                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="aqd-8n-bAY"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="aqd-8n-bAY">
+                            <connections>
+                                <segue destination="BYZ-38-t0r" kind="show" id="gZ2-mh-2Ld"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FzS-OD-aQd" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -236,7 +240,11 @@
                     </collectionView>
                     <navigationItem key="navigationItem" title="Sent Memes" id="bqP-Co-gzG">
                         <barButtonItem key="backBarButtonItem" title="Sent Memes" id="3dK-vD-BEO"/>
-                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="5Ba-Xn-bck"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="5Ba-Xn-bck">
+                            <connections>
+                                <segue destination="BYZ-38-t0r" kind="show" id="zh9-kp-hrQ"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="flowLayout" destination="5N1-v6-By7" id="hXv-Gr-7s3"/>
@@ -286,4 +294,7 @@
         <image name="collection_30x30" width="16" height="16"/>
         <image name="table_30x30" width="16" height="16"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="gZ2-mh-2Ld"/>
+    </inferredMetricsTieBreakers>
 </document>
