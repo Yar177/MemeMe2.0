@@ -19,6 +19,8 @@ UINavigationControllerDelegate {
     @IBOutlet weak var topToolbar: UIToolbar!
     @IBOutlet weak var bottomToolbar: UIToolbar!
     
+    @IBOutlet weak var navView: UIView!
+    
     let textFieldDeleget = TextFieldDelegate()
     
 //
@@ -187,8 +189,10 @@ UINavigationControllerDelegate {
     
     
     func hideToolbars(_ hide: Bool) {
+        
         topToolbar.isHidden = hide ? true : false
-        bottomToolbar.isHidden = hide ? true : false        
+        bottomToolbar.isHidden = hide ? true : false
+        navView.isHidden = hide ? true : false
     }
 
 }
