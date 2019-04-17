@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		75672EBF22665AF90052194F /* Meme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75672EBE22665AF90052194F /* Meme.swift */; };
+		75672EC12267620A0052194F /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75672EC02267620A0052194F /* CollectionViewCell.swift */; };
 		758DFABB21FF93E6000A9D6E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 758DFABA21FF93E6000A9D6E /* AppDelegate.swift */; };
 		758DFABD21FF93E6000A9D6E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 758DFABC21FF93E6000A9D6E /* ViewController.swift */; };
 		758DFAC021FF93E6000A9D6E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 758DFABE21FF93E6000A9D6E /* Main.storyboard */; };
@@ -29,6 +30,7 @@
 
 /* Begin PBXFileReference section */
 		75672EBE22665AF90052194F /* Meme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Meme.swift; sourceTree = "<group>"; };
+		75672EC02267620A0052194F /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
 		758DFAB721FF93E6000A9D6E /* MemeMe1.0.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MemeMe1.0.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		758DFABA21FF93E6000A9D6E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		758DFABC21FF93E6000A9D6E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -89,6 +91,7 @@
 				758DFAC121FF93FD000A9D6E /* Assets.xcassets */,
 				758DFAC321FF93FD000A9D6E /* LaunchScreen.storyboard */,
 				758DFAC621FF93FD000A9D6E /* Info.plist */,
+				75672EC02267620A0052194F /* CollectionViewCell.swift */,
 			);
 			path = MemeMe1.0;
 			sourceTree = "<group>";
@@ -211,6 +214,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				75672EC12267620A0052194F /* CollectionViewCell.swift in Sources */,
 				758DFABD21FF93E6000A9D6E /* ViewController.swift in Sources */,
 				75672EBF22665AF90052194F /* Meme.swift in Sources */,
 				758DFABB21FF93E6000A9D6E /* AppDelegate.swift in Sources */,

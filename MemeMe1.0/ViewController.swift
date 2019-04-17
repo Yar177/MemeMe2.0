@@ -151,7 +151,9 @@ UINavigationControllerDelegate {
         // Create the meme
         let meme = Meme(topText: topTextField.text!, bottomText: buttomTextField.text!, originalImage: imagePickerView.image!, memedImage: image)
         
-        let appDelegate = UIApplication.shared.delegate as! AppDelegate
+        // Add it to the memes array in the Application Delegate
+        let object = UIApplication.shared.delegate
+        let appDelegate = object as! AppDelegate
         appDelegate.memes.append(meme)
         
         return meme.memedImage
