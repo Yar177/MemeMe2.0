@@ -173,10 +173,17 @@ UINavigationControllerDelegate {
     
     
     @IBAction func cancel(_ sender: Any) {
+        
+        shareButton.isEnabled = false
+        
+        if topTextField.text == "Top" && buttomTextField.text == "Bottom" && imagePickerView.image == nil {
+            self.dismiss(animated: true, completion: nil)
+            return
+        }
+        
         imagePickerView.image = nil
         topTextField.text = "Top"
         buttomTextField.text = "Bottom"
-        shareButton.isEnabled = false
     }
     
     
